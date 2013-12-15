@@ -1,0 +1,138 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >        
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+		<TextView
+		    android:id="@+id/user_profile_loginname"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="20dp"
+		    android:layout_marginLeft="10dp"
+		    android:text="Login Name:"
+		    android:textSize="16sp" >
+
+        </TextView>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/profile_photo" />
+        
+        <RelativeLayout
+            android:id="@+id/buttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <com.parse.ParseImageView  
+       		android:id="@+id/user_profile_photo"
+       		android:layout_width="100dp"
+       		android:layout_height="100dp"
+       		android:layout_marginLeft="100dp"
+	    	android:layout_marginBottom="20dp"
+       		
+       		android:contentDescription="@string/profile_vehicle_photo"
+       		android:orientation="horizontal"
+       		android:src="@drawable/avatar" >
+   		    
+   		</com.parse.ParseImageView  >
+   		
+        <Button
+            android:id="@+id/button_change"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+			android:layout_alignParentRight="true"
+			android:background="@drawable/custom_button_brown"
+            android:text="@string/button_change">
+        </Button>
+        </RelativeLayout>
+        
+
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/owner_display_name" >
+        </TextView>
+        
+        <EditText
+            android:id="@+id/user_profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="textCapWords"
+            android:hint="@string/owner_name_hint">
+        </EditText>
+               
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            
+            android:text="@string/user_profile_email" >
+        </TextView>
+        
+        <EditText
+            android:id="@+id/user_profile_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:hint="@string/user_profile_email_hint">
+       
+        </EditText>
+        
+		<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/user_profile_phone" >
+        </TextView>
+        
+        <EditText
+            android:id="@+id/user_profile_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="textCapWords"
+            android:hint="@string/user_profile_phone_hint">
+        </EditText>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/button_signout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+				android:background="@drawable/custom_button_red"
+                android:text="@string/button_signout" />
+            
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+			android:background="@drawable/custom_button_lblue"
+            android:text="@string/button_save">
+        </Button>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</ScrollView>

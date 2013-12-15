@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "RideKeeper": {
+            "applicationId": "OZzFan5hpI4LoIqfd8nAJZDFZ3ZLJ70ZvkYCNJ6f", 
+            "masterKey": "ZuCNVSB5FpM9aW3vMDgwTSjdrxoppANG2KSSfjkQ"
+        }, 
+        "_default": {
+            "link": "RideKeeper"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.12"
+    }
+}

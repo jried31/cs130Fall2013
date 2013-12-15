@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" >
+    
+	<PreferenceCategory
+        android:key="notification_other"
+        android:title="When There Are Nearby Stolen Vehicles" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="other_beep"
+            android:title="Beep" />
+        
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="other_alert"
+            android:title="Alert" />
+        
+		<CheckBoxPreference
+            android:defaultValue="false"
+            android:key="other_shortvibration"
+            android:title="Short Vibration" />
+		
+		<CheckBoxPreference
+            android:defaultValue="true"
+            android:key="other_longvibration"
+            android:title="Long Vibration" />
+    </PreferenceCategory>
+    
+	    <PreferenceCategory
+        android:key="notification_owner_lift_tilt"
+        android:title="When Your Vehicle is STOLEN" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="owner_stolen_beep"
+            android:title="Beep" />
+        
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="owner_stolen_alert"
+            android:title="Alert" />
+        
+		<CheckBoxPreference
+            android:defaultValue="false"
+            android:key="owner_stolen_shortvibration"
+            android:title="Short Vibration" />
+		
+		<CheckBoxPreference
+            android:defaultValue="true"
+            android:key="owner_stolen_longvibration"
+            android:title="Long Vibration" />
+    </PreferenceCategory>
+	
+    <PreferenceCategory
+        android:key="notification_owner_lift_tilt"
+        android:title="When Your Vehicle is Lifted / Tilted" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="owner_lt_beep"
+            android:title="Beep" />
+        
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="owner_lt_alert"
+            android:title="Alert" />
+        
+		<CheckBoxPreference
+            android:defaultValue="false"
+            android:key="owner_lt_shortvibration"
+            android:title="Short Vibration" />
+		
+		<CheckBoxPreference
+            android:defaultValue="true"
+            android:key="owner_lt_longvibration"
+            android:title="Long Vibration" />
+    </PreferenceCategory>
+  
+    
+</PreferenceScreen>

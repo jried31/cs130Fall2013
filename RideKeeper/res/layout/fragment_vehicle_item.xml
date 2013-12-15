@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip" >
+
+    <com.parse.ParseImageView
+        android:id="@+id/vehicle_item_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:minWidth="300pt"
+        android:paddingRight="15dp"
+        android:src="@drawable/motorcycle" />
+    
+     <LinearLayout
+         android:id="@+id/bottomrow"
+         android:layout_width="fill_parent"
+         android:layout_height="26dip"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:layout_toRightOf="@id/vehicle_item_photo"
+         android:gravity="right|center_vertical"
+         android:orientation="horizontal"
+         android:weightSum="1" >
+        
+    <TextView
+        android:id="@+id/vehicle_item_year"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    	android:layout_weight="0.5"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Year"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/vehicle_item_status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+    	android:layout_weight="0.5"
+        android:singleLine="true"
+        android:text="Status"
+        android:textSize="12sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomrow"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/vehicle_item_photo"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+    
+        <TextView
+        android:id="@+id/vehicle_item_make"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Make "
+    	android:layout_weight="0.5"
+        android:textSize="16sp" />
+        
+    	<TextView
+        android:id="@+id/vehicle_item_model"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    android:layout_weight="0.5"
+        android:text="Model "
+        android:textSize="16sp" />
+    </LinearLayout>
+    
+</RelativeLayout> 
